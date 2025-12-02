@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Vazirmatn:wght@200;300;500;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400..700&display=swap" rel="stylesheet">
 
   <style>
     :root {
@@ -64,7 +65,8 @@
     
     /* --- Typography & Effects --- */
     .gold-text { background: #ad8748; -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-shadow: 0px 2px 5px rgba(160, 130, 100, 0.1); font-weight: 700; }
-    h1, h2, h3 { margin: 0; line-height: 1.4; color: var(--text-dark); }
+    .green-text { background: #397266; -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-shadow: 0px 2px 5px rgba(160, 130, 100, 0.1); font-weight: 700; }
+    h1, h2, h3 { margin: 0; color: var(--text-dark); }
     .title-small { font-size: 1.15rem; font-weight: 300; letter-spacing: 0.5px; }
     .title-large { font-size: 2.8rem; margin: 8px 0; }
     .subtitle { font-size: 1rem; color: var(--text-light); font-weight: 300; margin-top: 8px;}
@@ -81,7 +83,7 @@
     .active .anim-scale { opacity: 1; transform: scale(1); }
     .active .anim-blur { opacity: 1; filter: blur(0); }
     .d-1 { transition-delay: 0.2s; } .d-2 { transition-delay: 0.7s; } .d-3 { transition-delay: 1.2s; }
-    .gold-separator { height: 1px; width: 50px; background: linear-gradient(90deg, transparent, var(--accent-sage), transparent); margin: 25px auto; opacity: 0.6; }
+    .gold-separator { height: 1px; width: 50px; background: linear-gradient(90deg, transparent, var(--accent-sage), transparent); margin: 20px auto; opacity: 0.6; }
     .map-row { display: flex; gap: 22px; margin-top: 30px; justify-content: center; }
     .map-btn { width: 52px; height: 52px; border-radius: 50%; background: rgba(255,255,255,0.8); border: 1px solid rgba(212, 175, 55, 0.3); display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 20px rgba(160, 140, 110, 0.15); transition: all 0.3s ease; cursor: pointer; color: var(--accent-sage); text-decoration: none; }
     .map-btn:hover { transform: translateY(-3px); box-shadow: 0 12px 25px rgba(160, 140, 110, 0.25); color: var(--gold-dark); }
@@ -190,45 +192,42 @@
 
 
   <div class="scene" id="scene-1">
-    <div class="anim-blur d-1">
-        <span class="latin-decor">Save the Date</span>
+    <div class="anim-blur d-2">
+        <span class="latin-decor" style="font-family: 'Noto Nastaliq Urdu';">یا لطیف</span>
     </div>
     <div class="gold-separator anim-blur d-2"></div>
-    <h1 class="title-small anim-up d-2">دعوت به مراسم زیبای<br>پیوند و یکی شدن</h1>
+    <h1 class="title-large green-text anim-blur d-2" style="font-family: 'Noto Nastaliq Urdu';">فاطمه و سجاد</h1>
+    <h3 class="title-small anim-blur d-2" style="font-family: 'Noto Nastaliq Urdu';">همتم بدرقهٔ راه کن ای طایرِ قدس<br> که دراز است رَهِ مقصد و من نوسفرم</h3>
+
   </div>
   <div class="scene" id="scene-2">
-    <div class="anim-blur d-1" style="color: var(--accent-sage)"></div>
-    <h2 class="title-large gold-text anim-up d-2">فاطمه   و   سجاد</h2><p class="subtitle anim-up d-3">لقاء     و     بیاتانی</p>
+    <h3 class="title-small anim-blur d-2" style="color: var(--accent-sage)">زمان</h3>
+    <div class="gold-separator anim-blur d-2"></div>
+    <div class="title-large green-text anim-blur d-2" dir="rtl" style="font-feature-settings: 'ss01'; font-family: 'Noto Nastaliq Urdu';">۴ دی‌ماه ۱۴۰۴</div>
+    <div class="title-small anim-blur d-3" style="margin-top: 15px; letter-spacing: 2px; font-family: 'Noto Nastaliq Urdu';">از ساعت ۷ عصر</div>
   </div>
   <div class="scene" id="scene-3">
-    <h3 class="title-small anim-blur d-1" style="color: var(--accent-sage)">روز مراسم</h3>
-    <div class="gold-separator anim-blur d-1"></div>
-    <div class="title-large gold-text anim-up d-2" dir="rtl" style="font-feature-settings: 'ss01'">۴ دی</div>
-    <div class="title-small anim-up d-3" style="margin-top: 10px;">سال ۱۴۰۴</div>
-    <div class="subtitle anim-up d-3" style="margin-top: 15px; letter-spacing: 2px;">ساعت ۷ عصر</div>
-  </div>
-  <div class="scene" id="scene-4">
-    <h3 class="title-small anim-blur d-1" style="color: var(--accent-sage)">مکان برگزاری</h3>
-    <div class="gold-separator anim-blur d-1"></div>
-    <h2 class="gold-text anim-blur d-2" style="font-size: 2rem; margin-top:10px;">تالار پذیرایی دریا پلاس</h2>
-    <p class="subtitle anim-blur d-2">تهران، خیابان پاسداران، نرسیده به میدان نوبنیاد</p>
+    <h3 class="title-small anim-blur d-2" style="color: var(--accent-sage)">مکان </h3>
+    <div class="gold-separator anim-blur d-2"></div>
+    <h2 class="green-text anim-blur d-2" style="font-size: 1.8rem; margin-top:10px; font-family: 'Noto Nastaliq Urdu';">تالار پذیرایی دریا پلاس</h2>
+    <p class="title-small anim-blur d-2" style="font-family: 'Noto Nastaliq Urdu';">تهران، خیابان پاسداران، نرسیده به میدان نوبنیاد</p>
     <div class="map-row anim-scale d-3">
         <!-- <a href="https://waze.com/ul?ll=35.7833,51.3750&navigate=yes" target="_blank" class="map-btn" aria-label="Motehri on Waze"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg></a> -->
         <a href="https://www.google.com/maps/search/?api=1&query=تالار+پذیرایی+دریا+پلاس،+تهران" target="_blank" class="map-btn" aria-label="Google Maps"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></a>
     </div>
   </div>
-  <div class="scene" id="scene-5">
-    <div class="anim-scale d-1"><span class="latin-decor" style="font-size:3rem;">Save The Date</span></div>
-    <div class="gold-separator anim-blur d-1"></div>
-    <h1 class="gold-text anim-up d-2" style="font-size: 1.8rem; line-height: 1.6;">مشتاق دیدار روی<br>ماهتان هستیم</h1>
-    <p class="subtitle anim-up d-3" style="margin-top:20px;">خانواده‌های بیاتانی و لقاء</p>
+  <div class="scene" id="scene-4">
+    <div class="anim-blur d-2"><span class="latin-decor" style="font-size:3rem;">Save The Date</span></div>
+    <div class="gold-separator anim-blur d-2"></div>
+    <h1 class="green-text anim-blur d-2" style="font-size: 1.8rem; line-height: 1.6; font-family: 'Noto Nastaliq Urdu';">قدوم مبارک‌تان روشنایی بخش این روز فرخنده است</h1>
+    <p class="title-small anim-blur d-3" style="margin-top:20px; color: var(--accent-sage); font-family: 'Noto Nastaliq Urdu';">خانواده‌های<br> بیاتانی و لقاء</p>
   </div>
 
 </div>
 
 <script>
   // Configuration
-  const sceneDurations = [4000, 7000, 7000, 9000, 7000];
+  const sceneDurations = [8000, 7000, 9000, 8000];
   const scenes = document.querySelectorAll('.scene');
   const audio = document.getElementById('backgroundAudio');
   const audioButton = document.getElementById('audioButton');
