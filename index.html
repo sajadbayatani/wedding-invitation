@@ -74,7 +74,7 @@
     .particles-container { position: absolute; inset: 0; overflow: hidden; z-index: 1; }
     .particle { position: absolute; border-radius: 50%; background: rgba(220, 190, 160, 0.4); box-shadow: 0 0 8px rgba(220, 190, 160, 0.3); animation: floatUp linear infinite; }
     @keyframes floatUp { 0% { transform: translateY(100vh) scale(0.5); opacity: 0; } 20% { opacity: 0.7; } 100% { transform: translateY(-10vh) scale(1.1); opacity: 0; } }
-    .scene { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 20px; z-index: 5; opacity: 0; pointer-events: none; transition: opacity 1.4s cubic-bezier(0.22, 1, 0.36, 1); }
+    .scene { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 20px; padding-bottom: 100px; z-index: 5; opacity: 0; pointer-events: none; transition: opacity 1.4s cubic-bezier(0.22, 1, 0.36, 1); }
     .scene.active { opacity: 1; pointer-events: auto; }
     .anim-up { opacity: 0; transform: translateY(35px); transition: all 1.1s ease-out; }
     .anim-scale { opacity: 0; transform: scale(0.85); transition: all 1.3s ease-out; }
@@ -198,7 +198,6 @@
     <div class="gold-separator anim-blur d-2"></div>
     <h1 class="title-large green-text anim-blur d-2" style="font-family: 'Noto Nastaliq Urdu';">فاطمه و سجاد</h1>
     <h3 class="title-small anim-blur d-2" style="font-family: 'Noto Nastaliq Urdu';">همتم بدرقهٔ راه کن ای طایرِ قدس<br> که دراز است رَهِ مقصد و من نوسفرم</h3>
-    <h3></h3>
 
   </div>
   <div class="scene" id="scene-2">
